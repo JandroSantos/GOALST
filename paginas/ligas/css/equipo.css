@@ -1,0 +1,90 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #212121;
+    color: #ffffff;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+.header {
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.team-info img {
+    width: 100px;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+.team-info h2 {
+    color: #0076c0;
+}
+
+.last-matches, .players {
+    margin-top: 20px;
+    background-color: rgb(0, 0, 0);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.last-matches ul, .players ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.last-matches li, .players li {
+    margin-bottom: 10px;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .partido {
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 15px;
+    width: 220px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    font-family: sans-serif;
+  }
+  
+  .equipo img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+  }
+  
+  .equipo span {
+    display: block;
+    margin-top: 5px;
+    font-weight: bold;
+  }
+  
+  .vs {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .fecha {
+    font-size: 14px;
+    color: #969696;
+  }
+  
