@@ -129,7 +129,7 @@ h1 {
     box-sizing: border-box;
     overflow: auto;
     justify-content: center;
-    margin-bottom: 180px;
+    margin-bottom: 60px;
 }
 .thumbnail::-webkit-scrollbar{
     width: 0;
@@ -157,7 +157,6 @@ h1 {
 @media (max-width: 678px) {
     .thumbnail{
         justify-content: start;
-	margin-bottom: 230px;
     }
     .slider .list .item .content h2{
         font-size: 60px;
@@ -196,7 +195,7 @@ h1 {
         padding: 0 20px; 
         margin-bottom: 20px;
         display: grid;
-        grid-template-columns: 1fr 1fr; 
+        grid-template-columns: 1fr 1fr 1fr; 
         gap: 20px;
         place-items: center; 
     }
@@ -225,7 +224,7 @@ h1 {
     }
 
     .thumbnail .item:nth-child(5) {
-        grid-column: 1 / -1;
+        grid-column: 3;
         text-align: center;
     }
 
