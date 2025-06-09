@@ -28,8 +28,8 @@ services:
     container_name: goalst_db
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: goalstpass
-      MYSQL_DATABASE: goalstdb
+      MYSQL_ROOT_PASSWORD: toor
+      MYSQL_DATABASE: goalst
     ports:
       - "3306:3306"
     volumes:
