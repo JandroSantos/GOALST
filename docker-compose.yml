@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  php:
+    image: php:8.1-apache
+    container_name: goalst_php
+    ports:
+      - "80:80"
+    volumes:
+      - .:/var/www/html
+    depends_on:
+      - db
+
+  node:
+    image: node:18
+    container_name: goalst_node
+    working_dir: /app
+    volumes:
+      - .:/app
+    command: bash -c "npm install && node server.js"
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+
+  db:
+    image: mysql:8.0
+    container_name: goalst_db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: goalstpass
+      MYSQL_DATABASE: goalstdb
+    ports:
+      - "3306:3306"
+    volumes:
+      - dbdata:/var/lib/mysql
+
+volumes:
+  dbdata:
