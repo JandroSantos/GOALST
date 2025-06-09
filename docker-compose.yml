@@ -35,5 +35,16 @@ services:
     volumes:
       - dbdata:/var/lib/mysql
 
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: goalst_phpmyadmin
+    depends_on:
+      - db
+    environment:
+      PMA_HOST: db
+      MYSQL_ROOT_PASSWORD: goalstpass
+    ports:
+      - "8080:80"
+
 volumes:
   dbdata:
