@@ -184,7 +184,7 @@ h1 {
         background-position: center;
         background-repeat: no-repeat;
         height: 100vh;
-        z-index: -2;
+        z-index: 0;
     }
 
     .thumbnail {
@@ -198,6 +198,11 @@ h1 {
         grid-template-columns: 1fr 1fr 1fr; 
         gap: 20px;
         place-items: center; 
+        z-index: 2;
+    }
+
+    .thumbnail .item a {
+        z-index: 4;
     }
 
     .thumbnail .item {

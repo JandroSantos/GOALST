@@ -14,7 +14,7 @@
 <body>
      <!--Header con registro y logo de la web-->
 <header>
-  <a href="indexd.php">
+  <a href="index.php">
       <img src="../Assets/img/logo3.png" alt="Logo del blog">
   </a>
   
